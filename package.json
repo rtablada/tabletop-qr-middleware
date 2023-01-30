@@ -8,7 +8,7 @@
     "build": "rimraf dist && tsc -p tsconfig.json",
     "build:dev": "tsc -w",
     "start": "ts-node src/index.ts",
-    "create-rqs": "ts-node src/create-qr.ts",
+    "create-qr": "ts-node src/create-qr.ts",
     "lint": "eslint src/**/*.ts",
     "lint:fix": "yarn lint --cache --fix"
   },
@@ -17,6 +17,7 @@
     "@types/koa__router": "^12.0.0",
     "@types/lodash": "^4.14.191",
     "@types/node": "^18.11.17",
+    "@types/qrcode": "^1.5.0",
     "@typescript-eslint/eslint-plugin": "^5.14.0",
     "@typescript-eslint/parser": "^5.14.0",
     "eslint": "^8.10.0",
@@ -30,6 +31,7 @@
   },
   "dependencies": {
     "@babel/parser": "^7.20.7",
+    "@faker-js/faker": "^7.6.0",
     "@koa/cors": "^4.0.0",
     "@koa/router": "^12.0.0",
     "chalk": "^4.0.0",
